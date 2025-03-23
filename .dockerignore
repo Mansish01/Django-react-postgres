@@ -1,0 +1,31 @@
+# Ignore Python cache and virtual environments
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+venv/
+.env
+.env.local
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore database files
+db.sqlite3
+
+# Ignore node modules (since dependencies are installed inside Docker)
+frontend/node_modules/
+
+# Ignore frontend build artifacts
+frontend/build/
+frontend/dist/
+
+# Ignore Docker-related files
+.dockerignore
+docker-compose.override.yml
+Dockerfile*
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
